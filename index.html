@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Donasi Mushola Al-Fattah</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('URL_GAMBAR_MASJID');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-gray-900 bg-opacity-75 text-white font-sans">
 
-  <!-- Hero -->
-  <section class="bg-blue-700 text-white py-16 text-center">
+  <!-- Hero Section -->
+  <section class="py-20 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h1 class="text-3xl font-bold mb-4">Donasi Pembangunan Mushola Al-Fattah</h1>
+      <h1 class="text-4xl font-bold mb-4">Donasi Pembangunan Mushola Al-Fattah</h1>
       <p class="text-lg">Wujudkan impian beribadah nyaman di RW 07 Cihaurgeulis, Kota Bandung</p>
-      <p class="mt-4 font-semibold text-yellow-300">Sedekahmu menjadi saksi pemberat amal ibadah di akhirat.</p>
+      <p class="mt-4 text-yellow-300">Sedekahmu menjadi saksi pemberat amal ibadah di akhirat.</p>
     </div>
   </section>
 
-  <!-- Target -->
-  <section class="py-10 bg-gray-50">
+  <!-- Target Pembangunan -->
+  <section class="py-10 bg-gray-800 bg-opacity-75">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-xl font-bold mb-4 text-blue-800">Target Pembangunan</h2>
+      <h2 class="text-2xl font-bold mb-4">Target Pembangunan</h2>
       <ul class="space-y-2 text-lg">
         <li>📌 <strong>Jumlah Pembiayaan:</strong> Rp. 180.000.000,-</li>
         <li>📥 <strong>Penghimpunan Saat Ini:</strong> Rp. 6.100.000,-</li>
@@ -30,27 +38,27 @@
   </section>
 
   <!-- Tentang Organisasi -->
-  <section class="py-10">
+  <section class="py-10 bg-gray-700 bg-opacity-75">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-xl font-bold mb-4 text-blue-800">Tentang AL-ASHR FOUNDATION</h2>
+      <h2 class="text-2xl font-bold mb-4">Tentang AL-ASHR FOUNDATION</h2>
       <p class="text-lg">Kami adalah yayasan sosial-keagamaan yang berfokus pada pembangunan dan kemakmuran tempat ibadah, serta kegiatan sosial kemasyarakatan.</p>
     </div>
   </section>
 
-  <!-- Donatur -->
-  <section class="py-10 bg-gray-50">
+  <!-- Daftar Donatur -->
+  <section class="py-10 bg-gray-800 bg-opacity-75">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-xl font-bold mb-4 text-blue-800">Daftar Donatur</h2>
-      <ul id="donatur-list" class="space-y-2 text-gray-700">
+      <h2 class="text-2xl font-bold mb-4">Daftar Donatur</h2>
+      <ul id="donatur-list" class="space-y-2 text-lg">
         <li>Memuat data donatur...</li>
       </ul>
     </div>
   </section>
 
   <!-- Cara Donasi -->
-  <section class="py-10">
-    <div class="max-w-3xl mx-auto px-4 bg-blue-50 p-6 rounded-lg shadow">
-      <h2 class="text-xl font-bold mb-4 text-blue-800">Cara Donasi</h2>
+  <section class="py-10 bg-gray-700 bg-opacity-75">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Cara Donasi</h2>
       <p class="text-lg mb-2">Bantu pembangunan mushola dengan berdonasi melalui:</p>
       <ul class="space-y-2 text-lg">
         <li>🏦 <strong>BSI a.n. AL-ASHR FOUNDATION</strong></li>
@@ -62,13 +70,13 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500">
+  <footer class="bg-gray-900 text-center py-4 text-sm text-gray-400">
     &copy; 2025 AL-ASHR FOUNDATION. All rights reserved.
   </footer>
 
-  <!-- Script Ambil Data Donatur dari Google Sheets -->
+  <!-- Script untuk Mengambil Data Donatur dari Google Sheets -->
   <script>
-    const sheetID = 'GANTI_DENGAN_SHEET_ID_ANDA';
+    const sheetID = '1AFYsl_-Vth1g8Ex0PBNyPqPopB3IPVGZZlCptE_txUQ';
     const url = `https://spreadsheets.google.com/feeds/list/${sheetID}/od6/public/values?alt=json`;
 
     fetch(url)
