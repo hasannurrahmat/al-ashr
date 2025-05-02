@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donasi Mushola Al-Fattah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Hero -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-4">Donasi Pembangunan Mushola Al-Fattah</h1>
+      <p class="text-lg">Wujudkan impian beribadah nyaman di RW 07 Cihaurgeulis, Kota Bandung</p>
+      <p class="mt-4 font-semibold text-yellow-300">Sedekahmu menjadi saksi pemberat amal ibadah di akhirat.</p>
+    </div>
+  </section>
+
+  <!-- Target -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-xl font-bold mb-4 text-blue-800">Target Pembangunan</h2>
+      <ul class="space-y-2 text-lg">
+        <li>📌 <strong>Jumlah Pembiayaan:</strong> Rp. 180.000.000,-</li>
+        <li>📥 <strong>Penghimpunan Saat Ini:</strong> Rp. 6.100.000,-</li>
+        <li>🎯 <strong>Target Donasi:</strong> Rp. 173.900.000,-</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tentang Organisasi -->
+  <section class="py-10">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-xl font-bold mb-4 text-blue-800">Tentang AL-ASHR FOUNDATION</h2>
+      <p class="text-lg">Kami adalah yayasan sosial-keagamaan yang berfokus pada pembangunan dan kemakmuran tempat ibadah, serta kegiatan sosial kemasyarakatan.</p>
+    </div>
+  </section>
+
+  <!-- Donatur -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-xl font-bold mb-4 text-blue-800">Daftar Donatur</h2>
+      <ul id="donatur-list" class="space-y-2 text-gray-700">
+        <li>Memuat data donatur...</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Cara Donasi -->
+  <section class="py-10">
+    <div class="max-w-3xl mx-auto px-4 bg-blue-50 p-6 rounded-lg shadow">
+      <h2 class="text-xl font-bold mb-4 text-blue-800">Cara Donasi</h2>
+      <p class="text-lg mb-2">Bantu pembangunan mushola dengan berdonasi melalui:</p>
+      <ul class="space-y-2 text-lg">
+        <li>🏦 <strong>BSI a.n. AL-ASHR FOUNDATION</strong></li>
+        <li>📄 <strong>Nomor Rekening:</strong> 7225099744</li>
+        <li>🔖 <strong>Tambahkan Kode:</strong> 111 pada akhir nominal. Contoh: Rp. 100.111,-</li>
+      </ul>
+      <a href="https://wa.me/6281388062125" target="_blank" class="inline-block mt-4 px-6 py-2 bg-green-500 text-white rounded hover:bg-green-600">🤳 Hubungi Kami via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500">
+    &copy; 2025 AL-ASHR FOUNDATION. All rights reserved.
+  </footer>
+
+  <!-- Script Ambil Data Donatur dari Google Sheets -->
+  <script>
+    const sheetID = 'GANTI_DENGAN_SHEET_ID_ANDA';
+    const url = `https://spreadsheets.google.com/feeds/list/${sheetID}/od6/public/values?alt=json`;
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const entries = data.feed.entry;
+        const list = document.getElementById('donatur-list');
+        list.innerHTML = '';
+        entries.forEach(entry => {
+          const nama = entry['gsx$namadonatur']?.$t;
+          const nominal = entry['gsx$nominal']?.$t;
+          const tanggal = entry['gsx$tanggal']?.$t;
+          const li = document.createElement('li');
+          li.textContent = `💝 ${nama} - Rp${nominal} (${tanggal})`;
+          list.appendChild(li);
+        });
+      })
+      .catch(() => {
+        document.getElementById('donatur-list').innerHTML = '<li>Gagal memuat data donatur.</li>';
+      });
+  </script>
+
+</body>
+</html>
