@@ -1,346 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Mushola Al-Fattah</title>
+    <head>
+        <title>Mushola Al-Fattah</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="TemplatesJungle">
-    <meta name="keywords" content="Free HTML CSS Website Template for Non-profit Organizations">
-    <meta name="description" content="Free HTML CSS Website Template for Non-profit Organizations">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="author" content="TemplatesJungle">
+        <meta name="keywords" content="Free HTML CSS Website Template for Non-profit Organizations">
+        <meta name="description" content="Free HTML CSS Website Template for Non-profit Organizations">
 
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <link href="plugins/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/vendor.css">
+        <link href="plugins/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-	<!-- script
-	================================================== -->
-	<script src="js/modernizr.js"></script>
+        <!-- script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
 
-</head>
-<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+        <div id="overlayer">
+            <span class="loader">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            </span>
+        </div>
 
-<div id="overlayer">
-	<span class="loader">
-	  <div class="dot dot-1"></div>
-	  <div class="dot dot-2"></div>
-	  <div class="dot dot-3"></div>
-	</span>
-</div>
+        <header class="site-header position-fixed py-1 text-white">
+            <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+            
+                <div class="container-fluid">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link me-4" href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link me-4" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link me-4" href="#events">Donation</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
 
-<header class="site-header position-fixed py-1 text-white">
-  	<nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
-	
-		<div class="container-fluid">
-		  <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
-		  
-		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-		    <div class="offcanvas-header">
-		      <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
-		      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		    </div>
-		    <div class="offcanvas-body">
-			  <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
-			    <li class="nav-item">
-			      <a class="nav-link me-4" href="#intro">Home</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link me-4" href="#about">About</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link me-4" href="#events">Donation</a>
-			    </li>
-			  </ul>
-			 </div>
-		  </div>
+                </div>
 
-	  	</div>
+            </nav>
+        </header>
 
-	</nav>
-</header>
+        <section id="intro" class="padding-large jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="section-title my-5">
+                            <h2 class="text-white display-2">Wujudkan impian beribadah nyaman percepatan pembangunan <em>Musholla Al-Fattah</em></h2>
+                        </div>
 
-<section id="intro" class="padding-large jarallax">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7">
-				<div class="section-title my-5">
-					<h2 class="text-white display-2">Wujudkan impian beribadah nyaman percepatan pembangunan <em>Musholla Al Fattah</em></h2>
-				</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-dark" data-aos="fade-up" data-aos-delay="0">
+                            <div class="card-body">
+                                <h3>Jumlah Pembiayaan</h3>
+                                <p>Total rincian biaya yang dibutuhkan untuk membangun mushola sebesar Rp 180.000.000</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-dark" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body">
+                                <h3>Biaya yang sudah terkumpul</h3>
+                                <p>Saat ini sudah terkumpul donasi sebesar <span id="biaya">6.100.000</span></p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-dark" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-body">
+                                <h3>Target Donasi</h3>
+                                <p>Sisa donasi yang dibutuhkan adalah <span id="sisa">171.900.000.</sisa></p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/banner.jpg" class="jarallax-img">
+        </section>
 
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card card-dark" data-aos="fade-up" data-aos-delay="0">
-					<div class="card-body">
-						<h3>Jumlah Pembiayaan</h3>
-						<p>Total rincian biaya yang dibutuhkan untuk membangun mushola sebesar Rp 180.000.000</p>
-						<a href="#">Learn more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card card-dark" data-aos="fade-up" data-aos-delay="300">
-					<div class="card-body">
-						<h3>Biaya yang sudah terkumpul</h3>
-						<p>Saat ini sudah terkumpul donasi sebesar 6.100.000</p>
-						<a href="#">Learn more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card card-dark" data-aos="fade-up" data-aos-delay="600">
-					<div class="card-body">
-						<h3>Target Donasi</h3>
-						<p>Sisa donasi yang dibutuhkan adalah 171.900.000.</p>
-						<a href="#">Learn more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<img src="images/banner.jpg" class="jarallax-img">
-</section>
+        <section id="about" class="padding-large">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 offset-md-3">
+                        <header>
+                            <h2 class="text-center my-5">Detail Informasi proses pembangunan <strong>Mushola Al-Fattah</strong></h2>
+                        </header>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <blockquote class="blockquote">
+                            <p>
+                            Wujudkan impian beribadah nyaman percepatan pembangunan Musholla Al-Fattah RW 07 Cihaurgeulis, Kota Bandung. Sedekah donasimu sangat berarti dan Insya-Allah menjadi saksi pemberat timbangan amal ibadah kelak di akhirat.
+                            </p>
+                            <cite class="mb-5">Al-Ashr Fondation</cite>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6" style="background: url('images/veronika-jorjobert-27w3ULIIJfI-unsplash.jpg');background-size: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="about" class="padding-large">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7 offset-md-3">
-				<header>
-					<h2 class="text-center my-5">Detail Informasi proses pembangunan <strong>Mushola Al Fattah</strong></h2>
-				</header>
-			</div>
-		</div>
-		<div class="row mb-5">
-			<div class="col-md-6">
-				<blockquote class="blockquote">
-					<p>
-					Wujudkan impian beribadah nyaman percepatan pembangunan Musholla Al Fattah RW 07 Cihaurgeulis, Kota Bandung. Sedekah donasimu sangat berarti dan Insya-Allah menjadi saksi pemberat timbangan amal ibadah kelak di akhirat.
-                    </p>
-					<cite class="mb-5">Al Ash Fondation</cite>
-				</blockquote>
-			</div>
-			<div class="col-md-6" style="background: url('images/veronika-jorjobert-27w3ULIIJfI-unsplash.jpg');background-size: cover;">
-			</div>
-		</div>
-	</div>
-</section>
+        <section id="mission" class="padding-large no-padding-top">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="0">
+                            <div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+                                <canvas id="orphans" width="180" height="180"></canvas>
+                            </div>
+                            <div>
+                                <h3>Donasi</h3>
+                                <p>Target donasi pembangunan yang ingin dicapai adalah Rp 180.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="300">
+                            <div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+                                <canvas id="labor" width="180" height="180"></canvas>
+                            </div>
+                            <div>
+                                <h3>Zakat</h3>
+                                <p>Kami juga menerima zakat dalam bentuk lain, semisal bahan bangunan, tenaga, konsumsi, dll.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="600">
+                            <div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+                                <canvas id="education" width="180" height="180"></canvas>
+                            </div>
+                            <div>
+                                <h3>Wakaf </h3>
+                                <p>Proses penerimaan wakaf juga dapat dilakukan dengan menghubungi langsung kontak whatsapp yang tertera di website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="900">
+                            <div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+                                <canvas id="health" width="180" height="180"></canvas>
+                            </div>
+                            <div>
+                                <h3>Progress</h3>
+                                <p>Proses pengerjaan saat ini sudah dalam tahap 40% dimana musholla sudah dapat ditempati untuk kegiatan ibadah dan majelis ilmu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="mission" class="padding-large no-padding-top">
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="0">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="orphans" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Donasi</h3>
-						<p>An estimated 153 million children worldwide are orphans (UNICEF)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="300">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="labor" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Zakat</h3>
-						<p>Worldwide, there are 168 million child laborers, accounting for almost 11% of children (ILO)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="600">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="education" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Wakaf </h3>
-						<p>263 million children and youth are out of school (UNESCO)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="900">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="health" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Progress</h3>
-						<p>In 2017, 75% of malnourished children lived in less developed regions (WHO)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+        <section id="mission" class="bg-grey padding-large">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <header class="text-center my-5">
+                            <span class="text-muted">know more</span>
+                            <h2><strong>About Al-Ashr Fondation</strong></h2>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="300">
+                        <h3>About Al-Ashr Fondation</h3>
+                        <p>Merupakan lembaga yang memprakarsai pembuatan musholla Al-Fattah</p>
+                        <a href="#" class="btn-link">Read more</a>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="600">
+                        <h3>About Musholla Al-Fattah</h3>
+                        <p>Mushola yang didirikan di gang sukaluyu III, Bandung, dengan tujuan sebagai tempat ibadah dan majelis ilmu untuk warga sekitar</p>
+                        <a href="#" class="btn-link">Read more</a>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="900">
+                        <h3>About Donasi</h3>
+                        <p>Donasi dapat dilakukan via transfer ke bank BSI maupun kontak whatsapp</p>
+                        <a href="#" class="btn-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="mission" class="bg-grey padding-large">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<header class="text-center my-5">
-					<span class="text-muted">know more</span>
-					<h2><strong>About Al Ash Fondation</strong></h2>
-				</header>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="300">
-				<h3>About Al Ashr Fondation</h3>
-				<p>Lacus vitae mauris morbi molestie vulputate lorem semper. Metus sollicitudin urna orci sapien mattis netus lacus.</p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="600">
-				<h3>About Musholla Al Fattah</h3>
-				<p>Lacus vitae mauris morbi molestie vulputate lorem semper. Metus sollicitudin urna orci sapien mattis netus lacus.</p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="900">
-				<h3>About Donasi</h3>
-				<p>Lacus vitae mauris morbi molestie vulputate lorem semper. Metus sollicitudin urna orci sapien mattis netus lacus.</p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-		</div>
-	</div>
-</section>
+        <section id="events" class="padding-large">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <header class="text-center my-5">
+                            <span class="text-muted">Live Donasi</span>
+                            <h2><strong>Musholl Al-Fattah</strong></h2>
+                        </header>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                    <ol class="list-group list-group-flush" id="donaturList">
+                        <!-- Data dari Google Sheet akan masuk di sini -->
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="events" class="padding-large">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<header class="text-center my-5">
-					<span class="text-muted">Live Donasi</span>
-					<h2><strong>Musholl Al Fattah</strong></h2>
-				</header>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-8">
-				<ol class="list-group list-group-flush" data-aos="fade-zoom-in">
-				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span>2.000.000</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold">Hamba Allah</div>
-				      <span class="text-muted">Bandung</span>
-				    </div>
-				  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span>2.000.000</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold">Hamba Allah</div>
-				      <span class="text-muted">Bandung</span>
-				    </div>
-				  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span>2.000.000</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold">Hamba Allah</div>
-				      <span class="text-muted">Bandung</span>
-				    </div>
-				  </li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</section>
+        <script>
+            const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSTUfTTx2W1NNKY4ELhM7_LFf3C2tngzzX2hinSv3Fhqd3aP6IytueTJg4kV8VGZC6xK_QuGJETyoBG/pub?output=csv'; // ganti dengan link CSV-mu
 
-<section id="donate" class="cta jarallax padding-large text-white">
- 	<div class="container">
- 		<div class="row justify-content-center">
- 			
-	 		<div class="section-title justify-content-between col-md-5 mt-5">
-	 			<header>
-		 			<h2><strong>Cara Donasi</strong></h2>
-		 			<p class="text-white">BSI - Al-ASHR FOUNDATION<br>7225099744<br>Hubungi kami: <a href="https://wa.me/6281388062125" class="link link-hover font-semibold">wa.me/6281388062125</p>
-	 			</header>
-	 			<button class="btn btn-primary btn-lg rounded-pill">Donate Now</button>
-	 		</div>
+            function formatRupiah(angka) {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(angka);
+            }
 
- 		</div>
- 	</div>
- 	<img src="images/banner.jpg" class="jarallax-img" />
-</section>
+            fetch(csvUrl)
+            .then(response => response.text())
+            .then(data => {
+                const rows = data.trim().split('\n').map(row => row.split(','));
+                const header = rows[0]; // [namadonatur, nominal, asal, tanggal]
+                const dataRows = rows.slice(1);
 
-<footer class="padding-large text-white bg-dark">
-	<div class="container">
-	    <div class="row">
-	    	
-	    	<div class="col-12 col-md-6">
-		        <p>
-		        	<a href="mailto:hello@templatesjungle.com">hello@templatesjungle.com</a><br>
-		        	RW 07 Cihaurgeulis, Kecamatan Cibeunying Kaler<br>
-		        	+62 813-8806-2125
-		        </p>
-		        <ul class="justify-content-start list-unstyled d-flex">
-		        	<li><a href="#" class="nav-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-		        	<li><a href="#" class="nav-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-		        	<li><a href="#" class="nav-link"><ion-icon name="logo-skype"></ion-icon></a></li>
-		        	<li><a href="#" class="nav-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
-		        	<li><a href="#" class="nav-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-		        </ul>
-		    </div>
+                const container = document.getElementById('donaturList');
+                const biaya = document.getElementById('biaya');
+                const sisa = document.getElementById('sisa');
+                container.innerHTML = ''; // kosongkan isi awal
+                biaya.innerHTML = ''; // kosongkan isi awal
+                sisa.innerHTML = ''; // kosongkan isi awal
 
-		    <div class="col-4 col-md-2">
-		        <ul class="nav flex-column">
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Facebook</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Twitter</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Instagram</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pinterest</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">YouTube</a></li>
-		        </ul>
-		    </div>
+                var totalBiaya = 0;
+                var totalSisa = 0;
 
-		    <div class="col-4 col-md-2">
-		        <ul class="nav flex-column">
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-		        </ul>
-		    </div>
+                dataRows.forEach(row => {
+                    const [namadonatur, nominal, asal, tanggal] = row;
+                    const listItem = `
+                        <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+                        <div class="ms-2 me-5 text-uppercase">
+                            <span>${formatRupiah(nominal)}</span>
+                        </div>
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">${namadonatur}</div>
+                            <span class="text-muted">${tanggal}</span>
+                        </div>
+                        <a href="#" class="btn btn-primary rounded-pill">${asal}</a>
+                        </li>
+                    `;
+                    
+                    totalBiaya += parseInt(nominal)
+                    container.insertAdjacentHTML('beforeend', listItem);
+                });
 
-		    <div class="col-4 col-md-2">
-		        <ul class="nav flex-column">
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-		        </ul>
-		    </div>
-	    </div>
+                totalSisa = 180000000 - totalBiaya
+                biaya.innerHTML = 'Rp. ' + totalBiaya.toLocaleString();
+                sisa.innerHTML = 'Rp. ' + totalSisa.toLocaleString();
 
-	    <div class="d-flex justify-content-between flex-wrap py-4 my-4 border-top">
-	      <p>© 2025 Al ASh Fondation, Inc. All rights reserved.</p>
-	    </div>
-	</div>
-</footer>
+            })
+            .catch(err => {
+                console.error('Gagal mengambil data:', err);
+            });
+        </script>
 
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-<script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+        <section id="donate" class="cta jarallax padding-large text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="section-title justify-content-between col-md-5 mt-5">
+                        <header>
+                            <h2><strong>Cara Donasi</strong></h2>
+                            <p class="text-white">bisa melakukan transfer ke rekening BSI kami dengan nomor rekening sebagai berikut: BSI - Al-ASHR FOUNDATION - 7225099744<br> atau dapat menghubungi kami dengan mengklik tombol dibawah:</p>
+                        </header>
+                        <a href="https://wa.me/6281388062125" class="btn btn-primary btn-lg rounded-pill">Whatsapp kami</a>
+                    </div>
 
-</body>
+                </div>
+            </div>
+            <img src="images/banner.jpg" class="jarallax-img" />
+        </section>
+
+        <footer class="padding-large text-white bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>
+                            <a href="mailto:hello@templatesjungle.com">hello@templatesjungle.com</a><br>
+                            RW 07 Cihaurgeulis, Kecamatan Cibeunying Kaler<br>
+                            +62 813-8806-2125
+                        </p>
+                        <ul class="justify-content-start list-unstyled d-flex">
+                            <li><a href="#" class="nav-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#" class="nav-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://wa.me/6281388062125" class="nav-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap py-4 my-4 border-top">
+                <p>© 2025 Al-Ashr Fondation, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
 </html>
